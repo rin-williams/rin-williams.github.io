@@ -1,4 +1,4 @@
-window.location.replace("https://rinwilliams.github.io")
+window.location.replace("https://rinwilliams.github.io/rinwilliams.github.io/index.html")
 
 var imgLinks = document.querySelectorAll('.imglink');
 
