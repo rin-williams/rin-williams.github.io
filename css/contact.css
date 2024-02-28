@@ -1,0 +1,155 @@
+:root {
+  --font-body: "Hind Siliguri", sans-serif;
+  --font-nav: "Bebas Neue", sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+}
+h2 {
+  font-weight: 400;
+}
+h3 {
+  font-weight: 300;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.navbar-main li {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: snow;
+}
+
+.button-main {
+  font-family: var(--font-nav);
+  font-size: 1.25em;
+  color: snow;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.button {
+  margin: 25px;
+  padding: 15px;
+}
+
+.button-main a {
+  color: wheat;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.index-button {
+  opacity: 0.5;
+}
+
+.about-button {
+  opacity: 0.5;
+}
+
+.contact-button {
+  opacity: 1;
+}
+
+.button:hover {
+  opacity: 1;
+  animation: hoverZoomIn 0.5s ease;
+  animation-fill-mode: forwards;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.button:not(:hover) {
+  animation: hoverZoomOut 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+.navbar-main {
+  display: block;
+  position: sticky;
+  top: 10px;
+  margin-right: 35px;
+  z-index: 100;
+  color: snow;
+  opacity: 0;
+  animation: fadeIn 2s ease, dropIn 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+.main-title {
+  font-family: var(--font-body);
+  font-weight: normal;
+  font-size: 4em;
+  color: snow;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 2s ease, dropIn 2s ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+.main-content {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: normal;
+  animation: fadeIn 2s ease, dropIn 2s ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.imglink img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  margin-left: 45px;
+  margin-right: 45px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.imglink img:hover {
+  animation: hoverZoomIn 0.25s ease, dropShadowIn 0.25s ease,
+    fadeInHalf 0.25s ease;
+  animation-fill-mode: forwards;
+}
+
+.imglink img:not(:hover) {
+  animation: hoverZoomOut 0.25s ease, dropShadowOut 0.25s ease,
+    fadeOutHalf 0.25s ease;
+  animation-fill-mode: forwards;
+}
+
+body {
+  color: #555;
+  line-height: 1.6;
+  font-size: 18px;
+  background: #111111;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
