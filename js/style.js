@@ -1,3 +1,5 @@
+window.location.replace("https://rinwilliams.github.io")
+
 var imgLinks = document.querySelectorAll('.imglink');
 
 imgLinks.forEach(function (imgLink) {
