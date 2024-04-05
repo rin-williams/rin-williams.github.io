@@ -88,6 +88,26 @@
   }
 }
 
+@keyframes letterSpaceIn_small {
+  0% {
+    letter-spacing: 20px;
+  }
+
+  100% {
+    letter-spacing: 0px;
+  }
+}
+
+@keyframes letterSpaceOut_small {
+  0% {
+    letter-spacing: 0;
+  }
+
+  100% {
+    letter-spacing: 20px;
+  }
+}
+
 @keyframes hoverZoomIn {
   0% {
     transform: scale(1);
@@ -192,45 +212,59 @@
   0% {
     opacity: 0.3;
   }
+
   49% {
     opacity: 0.3;
   }
+
   50% {
     opacity: 1;
   }
+
   60% {
     opacity: 0.5;
   }
+
   65% {
     opacity: 1;
   }
+
   70% {
     opacity: 0.5;
   }
+
   75% {
     opacity: 1;
   }
+
   80% {
     opacity: 0.5;
   }
+
   83% {
     opacity: 1;
   }
+
   86% {
     opacity: 0.5;
   }
+
   89% {
     opacity: 1;
   }
+
   92% {
     opacity: 0.5;
   }
+
   95% {
     opacity: 1;
   }
+
   97% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
   }

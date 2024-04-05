@@ -76,26 +76,3 @@ async function callRandomFlicker() {
     setTimeout(callRandomFlicker, randomInterval);
 }
 callRandomFlicker();
-
-function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-    obj.style.width = obj.contentWindow.document.documentElement.scrollWidth + 'px';
-}
-
-window.addEventListener('scroll', function () {
-    var buttons = document.querySelectorAll('.button');
-    var navbarIcon = document.querySelector('.nav-button');
-
-    if (window.scrollY < 300) {
-        buttons.forEach(function (button) {
-            button.style.display = 'flex';
-        });
-        navbarIcon.style.display = 'none';
-
-    } else {
-        buttons.forEach(function (button) {
-            button.style.display = 'none';
-        });
-        navbarIcon.style.display = 'flex';
-    }
-});

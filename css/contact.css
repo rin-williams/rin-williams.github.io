@@ -3,24 +3,24 @@
   --font-nav: "Bebas Neue", sans-serif;
 }
 
+/* nav bar */
 h1 {
   font-weight: 500;
 }
+
 h2 {
   font-weight: 400;
 }
+
 h3 {
   font-weight: 300;
 }
 
-ul {
+.navbar-main ul {
   list-style-type: none;
-  overflow: hidden;
 }
 
-.navbar-main li {
-  float: right;
-}
+/* .navbar-main li {} */
 
 a {
   text-decoration: none;
@@ -28,11 +28,15 @@ a {
 }
 
 .button-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-family: var(--font-nav);
   font-size: 1.25em;
   color: snow;
   text-decoration: none;
   margin: 0px;
+  padding: 0px;
 }
 
 .button {
@@ -41,7 +45,7 @@ a {
 }
 
 .button-main a {
-  color: wheat;
+  color: #f5deb3;
   text-decoration: none;
   font-size: 1.5em;
 }
@@ -71,17 +75,18 @@ a {
 }
 
 .navbar-main {
-  display: block;
-  position: sticky;
-  top: 10px;
-  margin-right: 35px;
-  z-index: 100;
-  color: snow;
   opacity: 0;
+  display: block;
+  align-items: center;
+  background-color: rgba(6, 18, 42, 0.346);
+  border-radius: 15px;
   animation: fadeIn 2s ease, dropIn 2s ease;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
+  margin-bottom: 15px;
 }
+
+/* after nav */
 
 .main-title {
   font-family: var(--font-body);
@@ -98,6 +103,8 @@ a {
 
 .main-content {
   display: block;
+  margin: 0px;
+  padding: 0px;
   font-family: var(--font-body);
   font-weight: normal;
   animation: fadeIn 2s ease, dropIn 2s ease;
@@ -111,7 +118,8 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .imglink img {
@@ -152,4 +160,80 @@ body {
   z-index: -1;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 728px) {
+
+  /* resize based on screen size, even fonts too */
+  .button {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* resize button size */
+  .button-main {
+    font-size: 1em;
+  }
+
+  .navbar-main {
+    display: block;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.00);
+    border-radius: 15px;
+    opacity: 0;
+    animation: fadeIn 2s ease, dropIn 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    margin-bottom: 15px;
+  }
+
+  .button-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-nav);
+    font-size: 1em;
+    color: snow;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .main-title {
+    margin: 0px;
+    opacity: 0;
+    font-size: 2em;
+    animation: fadeIn 2s ease, dropIn 2s ease;
+    animation-fill-mode: forwards;
+  }
+
+  .main-subtext-1 {
+    font-size: 1em;
+  }
+
+
+  .main-content {
+    animation: fadeIn 2s ease, dropIn 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+  }
+
+
+  .imglink img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+
 }
