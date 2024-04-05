@@ -434,7 +434,7 @@ body {
   }
 
   .main-subcontenttitle-2 {
-    font-size: 0.75em;
+    font-size: 1em;
 
   }
 
@@ -475,4 +475,26 @@ body {
     max-width: 100px;
   }
 
+  /* also make the spans smaller */
+  .main-subcontent-2 span {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .subtext-2-2 {
+    font-size: 1.5em;
+  }
+
+  .main-subcontenttitle-3 {
+    font-size: 1em;
+  }
+
+  .main-subtext-3 span {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .subtext-3-2 {
+    font-size: 1.5em;
+  }
 }
