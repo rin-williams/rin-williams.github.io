@@ -91,7 +91,6 @@ a {
 .main-title {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0px;
   padding: 0px;
   opacity: 0;
