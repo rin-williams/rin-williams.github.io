@@ -309,3 +309,23 @@
     background-color: rgba(18, 148, 144, 0);
   }
 }
+
+@keyframes nudgeUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes nudgeDown {
+  0% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

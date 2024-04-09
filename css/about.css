@@ -25,6 +25,95 @@
   animation-delay: 1.5s;
 }
 
+.courseworks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.courseworks h1 {
+  width: 100%;
+  display: block;
+  justify-content: center;
+  font-size: 3em;
+}
+.coursework {
+  display: block;
+  margin: 25px 40px;
+  padding: 25px;
+  text-align: left;
+  border: 2px solid var(--color-secondary);
+  border-radius: 10px;
+}
+
+.coursework:hover {
+  animation: secondaryColorHover 0.5s ease, nudgeUp 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+.coursework:not(:hover) {
+  animation: secondaryColorNotHover 0.25s ease, nudgeDown 0.25s ease;
+  animation-fill-mode: forwards;
+}
+.coursework h1 {
+  font-size: 2em;
+  margin: 0px;
+}
+
+.clist {
+  font-size: 1.5em;
+  display: block;
+  margin: 0px 20px;
+  border: none;
+}
+
+.langs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.langs h1 {
+  width: 100%;
+  display: block;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.lang {
+  display: block;
+  margin: 25px 40px;
+  padding: 25px;
+  text-align: left;
+  border: 2px solid var(--color-secondary);
+  border-radius: 10px;
+}
+
+.lang:hover {
+  animation: secondaryColorHover 0.25s ease, nudgeUp 0.25s ease;
+  animation-fill-mode: forwards;
+}
+
+.lang:not(:hover) {
+  animation: secondaryColorNotHover 0.25s ease, nudgeDown 0.25s ease;
+  animation-fill-mode: forwards;
+}
+
+.lang h1 {
+  font-size: 2em;
+  margin: 0px;
+}
+
+.llist {
+  font-size: 1.5em;
+  display: block;
+  margin: 0px 20px;
+  border: none;
+}
+
+/* particles.js */
+
 #particles-js {
   width: 100%;
   height: 100%;
@@ -35,7 +124,6 @@
 }
 
 @media (max-width: 728px) {
-  /* resize based on screen size, even fonts too */
   .button {
     margin: 0px;
     padding-top: 10px;
