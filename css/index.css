@@ -1,52 +1,3 @@
-:root {
-  --font-body: "Hind Siliguri", sans-serif;
-  --font-nav: "Bebas Neue", sans-serif;
-}
-
-h1 {
-  font-weight: 500;
-}
-
-h2 {
-  font-weight: 400;
-}
-
-h3 {
-  font-weight: 300;
-}
-
-.navbar-main ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: snow;
-}
-
-.button-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: var(--font-nav);
-  font-size: 1.25em;
-  color: snow;
-  text-decoration: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.button {
-  margin: 25px;
-  padding: 15px;
-}
-
-.button-main a {
-  color: #f5deb3;
-  text-decoration: none;
-  font-size: 1.5em;
-}
-
 .index-button {
   opacity: 1;
 }
@@ -59,35 +10,6 @@ a {
   opacity: 0.5;
 }
 
-.button:hover {
-  opacity: 1;
-  animation: hoverZoomIn 0.5s ease;
-  animation-fill-mode: forwards;
-  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
-}
-
-.button:not(:hover) {
-  animation: hoverZoomOut 0.5s ease;
-  animation-fill-mode: forwards;
-}
-
-.navbar-main {
-  display: block;
-  align-items: center;
-  opacity: 0;
-  background-color: rgba(6, 18, 42, 0.346);
-  border-radius: 15px;
-  animation: fadeIn 2s ease, dropIn 2s ease;
-  animation-fill-mode: forwards;
-  animation-delay: 0.5s;
-  margin-bottom: 15px;
-}
-
-.main-content {
-  display: block;
-  opacity: 0.25;
-}
-
 .main-title {
   display: flex;
   justify-content: center;
@@ -98,7 +20,7 @@ a {
   font-weight: normal;
   font-size: 4em;
   text-align: center;
-  color: snow;
+  color: var(--color-secondary);
   opacity: 0;
   animation: fadeIn 2s ease, zoomIn 2s ease, letterSpaceOut 3s ease,
     letterSpaceIn 2s 3s ease;
@@ -108,20 +30,23 @@ a {
 .main-content {
   display: block;
   text-align: center;
-  margin: 25px;
+  margin: 0px;
+  padding: 0px;
   font-weight: normal;
   color: snow;
   opacity: 0;
-  animation: dropIn 3s ease, fadeIn 3s ease;
+  animation: fadeIn 5s ease;
   animation-fill-mode: forwards;
+  animation-delay: 2s;
   font-family: var(--font-body);
   font-size: 1em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .main-subtext-1 {
   margin: 0px;
-  text-align: left;
+  margin: 10px;
+  text-align: center;
 }
 
 .main-subcontent-1 {
@@ -134,8 +59,8 @@ a {
 }
 
 .main-subcontenttitle-2 {
-  margin-top: 0px;
-  margin-bottom: 15px;
+  margin: 0px;
+  padding: 0px 35px;
   text-align: left;
   opacity: 0;
   animation: dropIn 2s ease, fadeIn 2s ease;
@@ -143,17 +68,31 @@ a {
   animation-delay: 2.5s;
 }
 
-.main-subcontenttitle-2 h1 {
-  margin: 0px;
-}
-
 .main-subcontent-2 {
   display: flex;
   flex-wrap: wrap;
   opacity: 0;
+  margin-top: 0px;
   animation: fadeIn 2s ease, swipeLeft 2s ease;
   animation-fill-mode: forwards;
   animation-delay: 3s;
+}
+
+.main-content-2 {
+  display: block;
+  border: 2px solid var(--color-secondary);
+  border-color: var(--secondary-not-hover);
+  border-radius: 10px;
+}
+
+.main-content-2:hover {
+  animation: secondaryColorHover 0.25s ease;
+  animation-fill-mode: forwards;
+}
+
+.main-content-2:not(:hover) {
+  animation: secondaryColorNotHover 0.25s ease;
+  animation-fill-mode: forwards;
 }
 
 .ytvideo-container {
@@ -161,6 +100,8 @@ a {
   overflow: hidden;
   width: 640px;
   height: 360px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .yt-iframe {
@@ -184,15 +125,15 @@ a {
 
 .subtext-2-1 {
   margin: 0;
-  font-weight: normal;
-  color: white;
+  font-size: 1em;
+  color: var(--color-secondary);
   opacity: 0.75;
 }
 
 .subtext-2-2 {
   margin: 0;
   font-weight: normal;
-  color: white;
+  color: var(--color-secondary);
   font-size: 2.5em;
 }
 
@@ -214,6 +155,34 @@ a {
   padding: 0px;
 }
 
+.main-content-3 {
+  display: block;
+  border: 2px solid var(--color-secondary);
+  border-color: var(--secondary-not-hover);
+  border-radius: 10px;
+  margin: 25px 0px;
+}
+
+.main-content-3:hover {
+  animation: secondaryColorHover 0.25s ease;
+  animation-fill-mode: forwards;
+}
+
+.main-content-3:not(:hover) {
+  animation: secondaryColorNotHover 0.25s ease;
+  animation-fill-mode: forwards;
+}
+
+.main-subcontenttitle-3 {
+  margin: 0px;
+  padding: 0px 35px;
+  text-align: right;
+  opacity: 0;
+  animation: dropIn 2s ease, fadeIn 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
 .main-subcontent-3 {
   display: flex;
   flex-wrap: wrap;
@@ -224,15 +193,6 @@ a {
   animation: fadeIn 2s ease, swipeRight 2s ease;
   animation-fill-mode: forwards;
   animation-delay: 3.5s;
-}
-
-.main-subcontenttitle-3 {
-  margin: 0px;
-  text-align: right;
-  opacity: 0;
-  animation: dropIn 2s ease, fadeIn 2s ease;
-  animation-fill-mode: forwards;
-  animation-delay: 4s;
 }
 
 .logo-container {
@@ -280,7 +240,7 @@ a {
 .subtext-3-1 {
   margin: 0px;
   font-weight: normal;
-  color: white;
+  color: var(--color-secondary);
   opacity: 0.75;
 }
 
@@ -343,34 +303,6 @@ a {
   animation-fill-mode: forwards;
 }
 
-body {
-  color: #555;
-  line-height: 1.6;
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-  background: #111111;
-  overflow-x: hidden;
-}
-
-.copyright {
-  display: block;
-  text-align: center;
-  margin: 0px;
-  font-size: 1em;
-  color: snow;
-  opacity: 0;
-  animation: fadeIn 2s ease;
-  animation-fill-mode: forwards;
-  animation-delay: 5s;
-}
-
-.copyright-text {
-  font-family: var(--font-body);
-  font-weight: normal;
-  opacity: 0.5;
-}
-
 #particles-js {
   width: 100%;
   height: 100%;
@@ -381,62 +313,33 @@ body {
 }
 
 @media (max-width: 728px) {
+  .main-subcontenttitle-2 h1 {
+    font-size: 1.75em;
+  }
 
-  /* resize the youtube frame */
   .ytvideo-container {
+    display: flex;
     width: 320px;
     height: 180px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .subtext-2-1 {
-    font-size: 0.75em;
+    text-align: center;
   }
 
   .subtext-3-1 {
-    font-size: 0.75em;
-  }
-
-  /* resize based on screen size, even fonts too */
-  .button {
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  /* resize button size */
-  .button-main {
-    font-size: 1em;
-  }
-
-  .navbar-main {
-    display: block;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.00);
-    border-radius: 15px;
-    opacity: 0;
-    animation: fadeIn 2s ease, dropIn 2s ease;
-    animation-fill-mode: forwards;
-    animation-delay: 0.5s;
-    margin-bottom: 15px;
-  }
-
-  .button-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    font-family: var(--font-nav);
-    font-size: 1em;
-    color: snow;
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
+    text-align: center;
   }
 
   .main-title {
     opacity: 0;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    margin: 0px;
     font-size: 2em;
     animation: fadeIn 2s ease, zoomIn 2s ease, letterSpaceOut_small 3s ease,
       letterSpaceIn_small 2s 3s ease;
@@ -449,10 +352,15 @@ body {
 
   .main-subcontenttitle-2 {
     font-size: 1em;
-
+    text-align: center;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .main-content {
+    margin: 0px;
+    padding: 0px;
     font-size: 0.75em;
   }
 
@@ -464,6 +372,18 @@ body {
   .main-subtext-3 {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .logo {
+    max-width: 125px;
   }
 
   .info {
@@ -485,10 +405,6 @@ body {
     max-height: 25px;
   }
 
-  .logo {
-    max-width: 100px;
-  }
-
   /* also make the spans smaller */
   .main-subcontent-2 span {
     margin: 0px;
@@ -501,6 +417,11 @@ body {
 
   .main-subcontenttitle-3 {
     font-size: 1em;
+    text-align: center;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
   }
 
   .main-subtext-3 span {

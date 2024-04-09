@@ -1,53 +1,3 @@
-:root {
-  --font-body: "Hind Siliguri", sans-serif;
-  --font-nav: "Bebas Neue", sans-serif;
-}
-
-/* nav bar */
-h1 {
-  font-weight: 500;
-}
-
-h2 {
-  font-weight: 400;
-}
-
-h3 {
-  font-weight: 300;
-}
-
-.navbar-main ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: snow;
-}
-
-.button-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: var(--font-nav);
-  font-size: 1.25em;
-  color: snow;
-  text-decoration: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.button {
-  margin: 25px;
-  padding: 15px;
-}
-
-.button-main a {
-  color: #f5deb3;
-  text-decoration: none;
-  font-size: 1.5em;
-}
-
 .index-button {
   opacity: 0.5;
 }
@@ -60,43 +10,18 @@ a {
   opacity: 1;
 }
 
-.button:hover {
-  opacity: 1;
-  animation: hoverZoomIn 0.5s ease;
-  animation-fill-mode: forwards;
-  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
-}
-
-.button:not(:hover) {
-  animation: hoverZoomOut 0.5s ease;
-  animation-fill-mode: forwards;
-}
-
-.navbar-main {
-  opacity: 0;
-  display: block;
-  align-items: center;
-  background-color: rgba(6, 18, 42, 0.346);
-  border-radius: 15px;
-  animation: fadeIn 2s ease, dropIn 2s ease;
-  animation-fill-mode: forwards;
-  animation-delay: 0.5s;
-  margin-bottom: 15px;
-}
-
-/* after nav */
-
 .main-title {
   font-family: var(--font-body);
   font-weight: normal;
   font-size: 4em;
-  color: snow;
+  color: var(--color-secondary);
   text-align: center;
   margin-top: 20px;
   animation: fadeIn 2s ease, dropIn 2s ease;
   animation-fill-mode: forwards;
   opacity: 0;
   animation-delay: 0.5s;
+  margin-top: 25px;
 }
 
 .main-content {
@@ -125,10 +50,7 @@ a {
   width: 100px;
   height: 100px;
   object-fit: contain;
-  margin-top: 75px;
-  margin-bottom: 75px;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin: 50px 50px;
   padding: 15px;
   border-radius: 15px;
 }
@@ -145,13 +67,6 @@ a {
   animation-fill-mode: forwards;
 }
 
-body {
-  color: #555;
-  line-height: 1.6;
-  font-size: 18px;
-  background: #111111;
-}
-
 #particles-js {
   width: 100%;
   height: 100%;
@@ -162,7 +77,6 @@ body {
 }
 
 @media (max-width: 728px) {
-
   /* resize based on screen size, even fonts too */
   .button {
     margin: 0px;
@@ -180,7 +94,7 @@ body {
   .navbar-main {
     display: block;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.00);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 15px;
     opacity: 0;
     animation: fadeIn 2s ease, dropIn 2s ease;
@@ -203,8 +117,9 @@ body {
   }
 
   .main-title {
-    margin: 0px;
+    margin: 25px;
     opacity: 0;
+    color: var(--color-secondary);
     font-size: 2em;
     animation: fadeIn 2s ease, dropIn 2s ease;
     animation-fill-mode: forwards;
@@ -214,25 +129,18 @@ body {
     font-size: 1em;
   }
 
-
   .main-content {
-    animation: fadeIn 2s ease, dropIn 2s ease;
+    animation: fadeIn 2s ease, dropInHalf 2s ease;
     animation-fill-mode: forwards;
     animation-delay: 1.5s;
   }
-
 
   .imglink img {
     width: 75px;
     height: 75px;
     object-fit: contain;
-    margin-top: 75px;
-    margin-bottom: 75px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 25px 25px;
     padding: 15px;
     border-radius: 15px;
   }
-
-
 }

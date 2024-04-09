@@ -18,6 +18,26 @@
   }
 }
 
+@keyframes dropInHalf {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropOutHalf {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -267,5 +287,25 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes secondaryColorHover {
+  0% {
+    background-color: rgba(18, 148, 144, 0);
+  }
+
+  100% {
+    background-color: rgba(18, 148, 144, 0.25);
+  }
+}
+
+@keyframes secondaryColorNotHover {
+  0% {
+    background-color: rgba(18, 148, 144, 0.25);
+  }
+
+  100% {
+    background-color: rgba(18, 148, 144, 0);
   }
 }
