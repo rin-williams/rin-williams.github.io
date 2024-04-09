@@ -1,3 +1,15 @@
+.index-button {
+  opacity: 0.5;
+}
+
+.about-button {
+  opacity: 1;
+}
+
+.contact-button {
+  opacity: 0.5;
+}
+
 .main-title {
   display: flex;
   justify-content: center;
