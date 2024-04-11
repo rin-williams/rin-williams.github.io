@@ -382,6 +382,7 @@
     margin-right: auto;
     margin-left: auto;
   }
+
   .logo {
     max-width: 125px;
   }
@@ -405,7 +406,6 @@
     max-height: 25px;
   }
 
-  /* also make the spans smaller */
   .main-subcontent-2 span {
     margin: 0px;
     padding: 0px;
