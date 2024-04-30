@@ -1,19 +1,8 @@
 var imgLinks = document.querySelectorAll('.imglink');
-
-imgLinks.forEach(function (imgLink) {
-    imgLink.addEventListener('mouseover', function () {
-        imgLinks.forEach(function (otherImgLink) {
-            otherImgLink.style.animation = 'blurIn 1s ease forwards';
-        });
-        this.style.animation = '';
-    });
-
-    imgLink.addEventListener('mouseout', function () {
-        imgLinks.forEach(function (otherImgLink) {
-            otherImgLink.style.animation = 'blurOut 0.5s ease forwards';
-        });
-    }, 500);
-});
+for (let i = 0; i < imgLinks.length; i++) {
+    let delay = (i * 0.15) + 0.5;
+    imgLinks[i].style.animation = `fadeIn 1s ${delay}s ease forwards`;
+}
 
 var resources2 = document.querySelectorAll('.info-2 .info');
 var currentSelectedResource2 = null;

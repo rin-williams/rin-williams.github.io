@@ -31,10 +31,26 @@
   font-size: 1em;
   text-align: center;
   margin: 20px 10px;
-  opacity: 0;
-  animation: fadeIn 2s ease, dropInHalf 2s ease;
+  opacity: 1;
   animation-fill-mode: forwards;
-  animation-delay: 1.5s;
+}
+
+.subtext-1 {
+  opacity: 0;
+  margin: 10px;
+  font-size: 3em;
+  animation: fadeIn 3s ease, dropIn 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.subtext-2 {
+  opacity: 0;
+  margin: 10px;
+  font-size: 1.5em;
+  animation: fadeIn 3s ease, dropInHalf 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1.25s;
 }
 
 .courseworks {
@@ -42,13 +58,24 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  opacity: 0;
+  animation: fadeIn 3s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
+
 .courseworks h1 {
   width: 100%;
   display: block;
   justify-content: center;
   font-size: 3em;
+  margin: 10px;
+  opacity: 0;
+  animation: fadeIn 3s ease, dropInHalf 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
 }
+
 .coursework {
   display: block;
   margin: 25px 40px;
@@ -67,16 +94,22 @@
   animation: secondaryColorNotHover 0.25s ease, nudgeDown 0.25s ease;
   animation-fill-mode: forwards;
 }
+
 .coursework h1 {
   font-size: 2em;
   margin: 0px;
 }
+
 
 .clist {
   font-size: 1.5em;
   display: block;
   margin: 0px 20px;
   border: none;
+  opacity: 0;
+  animation: fadeIn 3s ease, dropInHalf 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 
 .langs {
@@ -84,6 +117,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  animation: fadeIn 3s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 
 .langs h1 {
@@ -91,6 +128,11 @@
   display: block;
   justify-content: center;
   font-size: 3em;
+  margin: 10px;
+  opacity: 0;
+  animation: fadeIn 3s ease, dropInHalf 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
 }
 
 .lang {
@@ -122,7 +164,70 @@
   display: block;
   margin: 0px 20px;
   border: none;
+  opacity: 0;
+  animation: fadeIn 3s ease, dropInHalf 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 3s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.interests h1 {
+  width: 100%;
+  display: block;
+  justify-content: center;
+  font-size: 3em;
+  margin: 10px;
+  opacity: 0;
+  animation: fadeIn 3s ease, dropInHalf 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+.interest {
+  display: block;
+  margin: 25px 40px;
+  padding: 25px;
+  text-align: left;
+  border: 2px solid var(--color-secondary);
+  border-radius: 10px;
+}
+
+.interest:hover {
+  animation: secondaryColorHover 0.25s ease, nudgeUp 0.25s ease;
+  animation-fill-mode: forwards;
+}
+
+.interest:not(:hover) {
+  animation: secondaryColorNotHover 0.25s ease, nudgeDown 0.25s ease;
+  animation-fill-mode: forwards;
+}
+
+.interest h1 {
+  font-size: 2em;
+  margin: 0px;
+}
+
+.ilist {
+  font-size: 1.5em;
+  display: block;
+  margin: 0px 20px;
+  border: none;
+  opacity: 0;
+  animation: fadeIn 3s ease, dropInHalf 2s ease;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
 
 /* particles.js */
 
@@ -182,11 +287,55 @@
     animation-fill-mode: forwards;
   }
 
-  .main-subtext-1 {
-    font-size: 1em;
+  .subtext-1 {
+    font-size: 2em;
+  }
+
+  .subtext-2 {
+    font-size: 1.5em;
   }
 
   .main-content {
     font-size: 0.75em;
   }
+
+  /* resize the texts. */
+
+  .courseworks h1 {
+    font-size: 2em;
+  }
+
+  .coursework h1 {
+    font-size: 1.5em;
+  }
+
+  .clist {
+    font-size: 1em;
+  }
+
+  .langs h1 {
+    font-size: 2em;
+  }
+
+  .lang h1 {
+    font-size: 1.5em;
+  }
+
+  .llist {
+    font-size: 1em;
+  }
+
+  .interests h1 {
+    font-size: 2em;
+  }
+
+  .interest h1 {
+    font-size: 1.5em;
+  }
+
+  .ilist {
+    font-size: 1em;
+  }
+
+
 }
