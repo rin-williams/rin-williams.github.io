@@ -1,4 +1,4 @@
-# hello :3
+# hello :3 revamp in progress...
 
 Visit my website [here](https://rinmeng.github.io/index.html)
 

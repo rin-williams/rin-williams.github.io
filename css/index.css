@@ -1,12 +1,10 @@
-:root {
-    --font-body: "Hind Siliguri", sans-serif;
-    --font-nav: "Bebas Neue", sans-serif;
-    --color-body: rgb(43, 45, 66);
+/* about section */
+.home {
+    margin: 25px;
+    padding: 25px;
+    width: 93%;
+    height: 3000px;
+    background-color: var(--color3);
 }
 
-body {
-    font-family: var(--font-body);
-    background-color: var(--color-body);
-    color: var(--color-text);
-    font-size: 18px;
-}
+/* == */

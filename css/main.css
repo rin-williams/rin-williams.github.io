@@ -1,0 +1,139 @@
+:root {
+    --font-body: "Hind Siliguri", sans-serif;
+    --font-nav: "Bebas Neue", sans-serif;
+    --color-body: rgb(43, 45, 66);
+    --color-text: white;
+    --color1: rgb(141, 153, 174);
+    --color2: rgba(18, 148, 144);
+    --color3: rgb(9, 79, 77);
+    --margin-pc: 25px;
+    --ts: 1em;
+    --ts2: 1.5em;
+    --ts3: 2em;
+    --ts4: 2.5em;
+    --ts5: 3em;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-body);
+    color: var(--color-text);
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    position: sticky;
+    /* change to fixed, top 0px */
+    justify-content: space-around;
+    background-color: var(--color2);
+    width: 100%;
+    height: 125px;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.navbar-scrolled {
+    display: none;
+    position: fixed;
+    top: 0px;
+    justify-content: space-around;
+    background-color: var(--color2);
+    width: 100%;
+    height: 125px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 100px;
+}
+
+.navbar-logo img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.navbar-buttons {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-size: var(--ts3);
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--color-text);
+
+
+}
+
+.button a {
+    color: var(--color-text);
+    text-decoration: none;
+    opacity: 0.75;
+    transition: all 0.25s ease;
+    padding: 25px;
+}
+
+.button a:hover {
+    opacity: 1;
+}
+
+.button:hover {
+
+    animation: nudgeUp 0.25s ease forwards;
+}
+
+.button:not(:hover) {
+    animation: nudgeDown 0.25s ease forwards;
+}
+
+.navbar-quicklinks {
+    display: flex;
+}
+
+.ql {
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ql img {
+    width: 50px;
+    height: 50px;
+    padding: 0px 10px;
+    opacity: 0.75;
+    transition: all 0.25s ease;
+}
+
+.ql img:hover {
+    opacity: 1;
+    animation: nudgeUp 0.25s ease forwards;
+}
+
+
+.ql img:not(:hover) {
+    animation: nudgeDown 0.25s ease forwards;
+}
+
+.vl {
+    align-self: center;
+    border-left: 3px solid var(--color-text);
+    height: 50px;
+    margin: 0px;
+}
+
+/* == */
