@@ -13,25 +13,45 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// open navbar
+let navbarOpened = false;
 let navbarScrolledPanel = document.querySelector(".scrolled-navbar-panel");
 function openNav() {
+
   navbarScrolledPanel.classList.remove("fadeOut");
   navbarScrolledPanel.classList.add("fadeIn");
   navbarScrolledPanel.style.display = "block";
+  navbarOpened = true;
 }
 
 //close navbar
 function closeNav() {
   navbarScrolledPanel.classList.remove("fadeIn");
   navbarScrolledPanel.classList.add("fadeOut");
-  // add delay to close the navbar
+
   setTimeout(() => {
     navbarScrolledPanel.style.display = "none";
+    navbarOpened = false;
   }, 500);
 }
 
-// if user scrolls close the navbar
 window.addEventListener("scroll", () => {
-  closeNav();
+  if (navbarOpened) {
+    closeNav();
+  }
 });
+
+
+let buttonContainers = document.querySelectorAll(".button-container");
+
+buttonContainers.forEach((container) => {
+  let arrowButton = container.querySelector("img");
+
+  container.addEventListener("mouseover", () => {
+    arrowButton.style.opacity = "1";
+  });
+
+  container.addEventListener("mouseout", () => {
+    arrowButton.style.opacity = "0";
+  });
+});
+

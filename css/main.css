@@ -1,179 +1,258 @@
 :root {
-    --font-body: "Hind Siliguri", sans-serif;
-    --font-nav: "Bebas Neue", sans-serif;
-    --color-body: rgb(43, 45, 66);
-    --color-text: white;
-    --color1: rgb(141, 153, 174);
-    --color2: rgba(18, 148, 144);
-    --color3: rgb(9, 79, 77);
-    --margin-pc: 25px;
-    --ts: 1em;
-    --ts2: 1.5em;
-    --ts3: 2em;
-    --ts4: 2.5em;
-    --ts5: 3em;
+  --font-body: "Hind Siliguri", sans-serif;
+  --font-nav: "Bebas Neue", sans-serif;
+  --color-body: rgb(43, 45, 66);
+  --color-text: white;
+  --color1: rgb(141, 153, 174);
+  --color2: rgba(18, 148, 144);
+  --color3: rgb(9, 79, 77);
+  --margin-pc: 25px;
+  --ts: 1em;
+  --ts2: 1.5em;
+  --ts3: 2em;
+  --ts4: 2.5em;
+  --ts5: 3em;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--font-body);
-    background-color: var(--color-body);
-    color: var(--color-text);
-    font-size: 18px;
-    padding: 0px;
-    margin: 0px;
+  font-family: var(--font-body);
+  background-color: var(--color-body);
+  color: var(--color-text);
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* navbar */
 .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    position: sticky;
-    /* change to fixed, top 0px */
-    justify-content: space-around;
-    background-color: var(--color2);
-    width: 100%;
-    height: 125px;
-    opacity: 1;
-    transition: all 0.5s ease;
+  display: flex;
+  position: sticky;
+  justify-content: space-around;
+  background-color: var(--color2);
+  width: 100%;
+  height: 125px;
+  opacity: 1;
+  transition: all 0.5s ease;
 }
 
-
-
 .navbar-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    padding: 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px 100px;
 }
 
 .navbar-logo img {
-    max-width: 300px;
-    max-height: 300px;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 .navbar-buttons {
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
-    font-size: var(--ts3);
-    text-decoration: none;
-    list-style-type: none;
-    color: var(--color-text);
-
-
+  font-size: var(--ts3);
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--color-text);
 }
 
 .button a {
-    color: var(--color-text);
-    text-decoration: none;
-    opacity: 0.75;
-    transition: all 0.25s ease;
-    padding: 25px;
+  color: var(--color-text);
+  text-decoration: none;
+  opacity: 0.75;
+  transition: all 0.25s ease;
+  padding: 25px;
 }
 
 .button a:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .button:hover {
-
-    animation: nudgeUp 0.25s ease forwards;
+  animation: nudgeUp 0.25s ease forwards;
 }
 
 .button:not(:hover) {
-    animation: nudgeDown 0.25s ease forwards;
+  animation: nudgeDown 0.25s ease forwards;
 }
 
 .navbar-quicklinks {
-    display: flex;
+  display: flex;
 }
 
 .ql {
-    display: flex;
-    margin: 0px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .ql img {
-    width: 50px;
-    height: 50px;
-    padding: 0px 10px;
-    opacity: 0.75;
-    transition: all 0.25s ease;
+  width: 50px;
+  height: 50px;
+  padding: 15px 10px;
+  opacity: 0.75;
+  transition: all 0.25s ease;
 }
 
 .ql img:hover {
-    opacity: 1;
-    animation: nudgeUp 0.25s ease forwards;
+  opacity: 1;
+  animation: nudgeUp 0.25s ease forwards;
 }
 
-
 .ql img:not(:hover) {
-    animation: nudgeDown 0.25s ease forwards;
+  animation: nudgeDown 0.25s ease forwards;
 }
 
 .vl {
-    align-self: center;
-    border-left: 3px solid var(--color-text);
-    height: 50px;
-    margin: 0px;
+  align-self: center;
+  border-left: 3px solid var(--color-text);
+  height: 50px;
+  margin: 0px;
 }
 
 .scrolled-navbar {
-    display: none;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    max-width: 100px;
-    max-height: 100px;
-    opacity: 0;
-    transition: all 0.5s ease;
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  max-width: 100px;
+  max-height: 100px;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 .icons img {
-    max-width: 50px;
-    max-height: 50px;
-    padding: 10px;
-    opacity: 0.75;
-    transition: all 0.25s ease;
+  max-width: 50px;
+  max-height: 50px;
+  padding: 10px;
+  opacity: 0.75;
+  transition: all 0.25s ease;
 }
 
 .hamburger-icon img:hover {
-    opacity: 1;
-    cursor: pointer;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.x-icon {
+  align-self: center;
 }
 
 .x-icon img:hover {
-    opacity: 1;
-    cursor: pointer;
+  opacity: 1;
+  cursor: pointer;
 }
 
-.scrolled-navbar-container {
-    display: flex;
-    align-items: flex-start;
+.hl {
+  display: block;
+  border-top: 3px solid var(--color-text);
+  max-width: 200px;
+  margin: 25px auto;
+}
+
+.scrolled-navbar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.scrolled-navbar-logo {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0px;
+  padding: 0px;
+  align-self: center;
+  padding: 0px 50px;
+}
+
+.scrolled-navbar-logo img {
+  max-width: 200px;
+  max-height: 200px;
+  opacity: 0.75;
 }
 
 .scrolled-navbar-panel {
-    display: none;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    width: 35%;
-    height: 100%;
-    margin: 0px;
-    padding: 25px;
-    background-color: var(--color2);
+  display: none;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 35%;
+  height: 100%;
+  margin: 0px;
+  padding: 25px;
+  background-color: var(--color2);
+  box-shadow: 0px 0px 200px 1000px rgba(0, 0, 0, 0.25);
+}
+.scrolled-navbar-buttons {
+  font-size: var(--ts3);
+  display: block;
+  list-style-type: none;
+  padding: 0px;
+  margin: 50px 0px;
+}
+.scrolled-button {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  max-width: 100%;
+  opacity: 0.75;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.button-container img {
+  max-width: 25px;
+  max-height: 25px;
+  padding: 0px 10px;
+  margin: 0px;
+  opacity: 0.1;
+  transition: all 0.25s ease;
+}
+.button-container p {
+  margin: 0px;
+  padding: 0px;
+  opacity: 0.75;
+}
+
+.scrolled-button:hover {
+  opacity: 1;
+  animation: nudgeRight 0.25s ease forwards;
+}
+
+.scrolled-button:not(:hover) {
+  animation: nudgeLeft 0.25s ease forwards;
+}
+.scrolled-navbar-buttons a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  padding: 25px 100px;
+}
+
+.scrolled-navbar-quicklinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* == */
