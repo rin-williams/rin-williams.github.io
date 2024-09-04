@@ -2,7 +2,7 @@
 .home {
     margin: 25px;
     padding: 25px;
-    width: 93%;
+    width: 50%;
     height: 3000px;
     background-color: var(--color3);
 }
