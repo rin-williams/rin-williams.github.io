@@ -160,6 +160,7 @@ body {
   border-top: 3px solid var(--color-text);
   max-width: 200px;
   margin: 25px auto;
+  opacity: 0.5;
 }
 
 .scrolled-navbar-title {
@@ -212,7 +213,7 @@ body {
 
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0px;
   padding: 0px;
@@ -253,6 +254,24 @@ body {
   align-items: center;
   margin: 0px;
   padding: 0px;
+}
+
+.navbar-upButton {
+  display: block;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0.5;
+  transition: all 0.25s ease;
+}
+
+.navbar-upButton:hover {
+  opacity: 1;
+  animation: nudgeUp 0.25s ease forwards;
+}
+
+.navbar-upButton:not(:hover) {
+  animation: nudgeDown 0.25s ease forwards;
 }
 
 /* == */
