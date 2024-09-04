@@ -265,7 +265,7 @@ body {
     max-height: 25px;
     padding: 0px 10px;
     margin: 0px;
-    opacity: 0.1;
+    opacity: 0;
     transition: all 0.25s ease;
 }
 
