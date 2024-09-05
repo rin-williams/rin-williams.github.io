@@ -38,19 +38,19 @@
 .landing-page-title{
     opacity: 0;
     animation: swipeToLeft 1s ease forwards , fadeIn 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 .landing-page-subtitle-1{
     opacity: 0;
     animation: swipeToLeft 1s ease forwards, fadeIn 1s ease forwards;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 .landing-page-subtitle-2{
     opacity: 0;
     animation: swipeToLeft 1s ease forwards , fadeIn 1s ease forwards;
-    animation-delay: 2.5s;
+    animation-delay: 2s;
 }
 
 .home {
