@@ -30,13 +30,14 @@ body {
 /* navbar */
 .navbar {
     display: flex;
-    position: sticky;
+    position: fixed;
     justify-content: space-around;
-    background-color: var(--color2);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     width: 100%;
     height: 125px;
     opacity: 1;
     transition: all 0.5s ease;
+    z-index: 3;
 }
 
 .navbar-logo {
@@ -128,6 +129,7 @@ body {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+
     transition: all 0.25s ease;
 }
 
@@ -143,7 +145,7 @@ body {
 .scrolled-navbar {
     display: none;
     position: fixed;
-    top: 50px;
+    top: 28px;
     right: 50px;
     max-width: 100px;
     max-height: 100px;
@@ -202,7 +204,7 @@ body {
     height: 100%;
     margin: 0px;
     padding: 25px;
-    background-color: var(--color2);
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25));
     box-shadow: 0px 0px 200px 1000px rgba(0, 0, 0, 0.25);
     z-index: 2;
 }
@@ -231,7 +233,8 @@ body {
     height: 100%;
     margin: 0px;
     padding: 25px;
-    background-color: var(--color2);
+    /* gradient from right to left, starting from black 1 to 0.25 */
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25));
     box-shadow: 0px 0px 200px 1000px rgba(0, 0, 0, 0.25);
     z-index: 2;
 }

@@ -1,4 +1,35 @@
-/* about section */
+.landing-page {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-page-img-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    filter: brightness(0.75);
+}
+
+.landing-page-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.landing-page-text {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 .home {
     margin: 25px;
     padding: 25px;
@@ -6,5 +37,24 @@
     height: 3000px;
     background-color: var(--color3);
 }
+
+.about {
+    margin: 25px;
+    padding: 25px;
+    width: 50%;
+    height: 3000px;
+    background-color: var(--color3);
+}
+
+.contact {
+    margin: 25px;
+    padding: 25px;
+    width: 50%;
+    height: 3000px;
+    background-color: var(--color3);
+}
+
+
+
 
 /* == */
