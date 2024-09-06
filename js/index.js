@@ -3,20 +3,22 @@ function initNavbarScrollBehavior(panelSelector, hamburgerSelector) {
   let navbar = document.querySelector(".navbar");
   let navbarUpButton = document.querySelector(".navbar-upButton");
   let navbarLogo = document.querySelector(".navbar-logo");
+  let navbarQuicklinks = document.querySelector(".navbar-quicklinks");
   let navbarScrolledPanel = document.querySelector(panelSelector);
   let hamburgerIcon = document.querySelector(hamburgerSelector);
   let navbarOpened = false;
 
   function openNav() {
+    navbarOpened = true;
     navbarScrolledPanel.classList.remove("fadeOut");
     navbarScrolledPanel.classList.add("fadeIn");
     navbarScrolledPanel.style.display = "block";
-    navbarOpened = true;
-
+    
     hamburgerIcon.classList.remove("fadeIn");
     hamburgerIcon.classList.add("fadeOut");
     navbarUpButton.style.opacity = "0";
     navbarLogo.style.opacity = "0";
+    navbarQuicklinks.style.opacity = "0";
   }
 
   function closeNav() {
@@ -28,10 +30,10 @@ function initNavbarScrollBehavior(panelSelector, hamburgerSelector) {
     navbarUpButton.classList.add("fadeIn");
     navbarUpButton.style.opacity = "0.5";
     navbarLogo.style.opacity = "1";
+    navbarQuicklinks.style.opacity = "1";
 
     setTimeout(() => {
       navbarScrolledPanel.style.display = "none";
-
       navbarOpened = false;
     }, 500);
   }
