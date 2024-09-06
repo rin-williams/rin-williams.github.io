@@ -323,7 +323,7 @@ body {
 }
 
 .navbar-upButton:hover {
-    opacity: 1;
+
     animation: nudgeUp 0.25s ease forwards;
 }
 

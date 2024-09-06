@@ -9,11 +9,11 @@ function initNavbarScrollBehavior(panelSelector, hamburgerSelector) {
   let navbarOpened = false;
 
   function openNav() {
-    navbarOpened = true;
     navbarScrolledPanel.classList.remove("fadeOut");
     navbarScrolledPanel.classList.add("fadeIn");
     navbarScrolledPanel.style.display = "block";
-    
+    navbarOpened = true;
+
     hamburgerIcon.classList.remove("fadeIn");
     hamburgerIcon.classList.add("fadeOut");
     navbarUpButton.style.opacity = "0";
@@ -34,6 +34,7 @@ function initNavbarScrollBehavior(panelSelector, hamburgerSelector) {
 
     setTimeout(() => {
       navbarScrolledPanel.style.display = "none";
+
       navbarOpened = false;
     }, 500);
   }
