@@ -91,7 +91,15 @@
     color: var(--color3);
 }
 
-.project-1 {}
+
+.coding-project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%vh;
+
+    margin: 50px 0px;
+}
 
 
 .coding-container {
@@ -103,13 +111,25 @@
 }
 
 .coding-project-title {
+    margin: 25px;
     font-size: var(--ts5);
 }
 
 
 .language-title {
     font-size: var(--ts3);
-    margin: 0px;
+    margin: 0px 25px;
+}
+
+.learnmore-title {
+    font-size: var(--ts3);
+    margin: 0px 25px;
+}
+
+.coding-learnmore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .coding-languages {
