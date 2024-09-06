@@ -2,6 +2,7 @@ function initNavbarScrollBehavior(panelSelector, hamburgerSelector) {
   let navbarScrolled = document.querySelector(".scrolled-navbar");
   let navbar = document.querySelector(".navbar");
   let navbarUpButton = document.querySelector(".navbar-upButton");
+  let navbarLogo = document.querySelector(".navbar-logo");
   let navbarScrolledPanel = document.querySelector(panelSelector);
   let hamburgerIcon = document.querySelector(hamburgerSelector);
   let navbarOpened = false;
@@ -15,6 +16,7 @@ function initNavbarScrollBehavior(panelSelector, hamburgerSelector) {
     hamburgerIcon.classList.remove("fadeIn");
     hamburgerIcon.classList.add("fadeOut");
     navbarUpButton.style.opacity = "0";
+    navbarLogo.style.opacity = "0";
   }
 
   function closeNav() {
@@ -25,6 +27,7 @@ function initNavbarScrollBehavior(panelSelector, hamburgerSelector) {
     navbarUpButton.classList.remove("fadeOut");
     navbarUpButton.classList.add("fadeIn");
     navbarUpButton.style.opacity = "0.5";
+    navbarLogo.style.opacity = "1";
 
     setTimeout(() => {
       navbarScrolledPanel.style.display = "none";

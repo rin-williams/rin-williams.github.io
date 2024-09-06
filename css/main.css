@@ -48,6 +48,7 @@ body {
     align-items: center;
     margin: 0px;
     padding: 0px 100px;
+    transition: all 0.25s ease;
 }
 
 .navbar-logo img {
