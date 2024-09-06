@@ -37,27 +37,21 @@ function initNavbarScrollBehavior(panelSelector, hamburgerSelector) {
   }
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 950) {
+    if (window.scrollY > 700) {
       navbarScrolled.style.display = "block";
       navbarScrolled.classList.remove("fadeOut");
       navbarScrolled.classList.add("fadeIn");
       navbarScrolled.style.zIndex = "1000";
-      if (!navbar.classList.contains("fadeOut")) {
-        navbar.classList.remove("fadeIn");
-        navbar.classList.add("fadeOut");
-        setTimeout(() => {
-          navbar.style.display = "none";
-        }, 500);
-      }
+
+      navbar.classList.remove("fadeIn");
+      navbar.classList.add("fadeOut");
     } else {
       navbarScrolled.classList.remove("fadeIn");
       navbarScrolled.classList.add("fadeOut");
       navbarScrolled.style.zIndex = "-1";
-      if (navbar.style.display === "none") {
-        navbar.style.display = "flex";
-        navbar.classList.remove("fadeOut");
-        navbar.classList.add("fadeIn");
-      }
+
+      navbar.classList.remove("fadeOut");
+      navbar.classList.add("fadeIn");
     }
 
     if (navbarOpened) {
