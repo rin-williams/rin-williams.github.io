@@ -7,6 +7,9 @@
     <title>rin meng &#9829;</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="icon" href="imgs/icon.png" type="image/x-icon">
@@ -14,12 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,8 +25,8 @@
         <a class="navbar-logo" href=""><img src="imgs/rmlogo.png"></a>
         <div class="vl"></div>
         <ul class="navbar-buttons">
-            <li class="button index-button"><a href="#home">home</a></li>
-            <li class="button about-button"><a href="#about">about</a></li>
+            <li class="button index-button"><a href="#about">about</a></li>
+            <li class="button about-button"><a href="#portfolio">portfolio</a></li>
             <li class="button contact-button"><a href="#contact">contact</a></li>
         </ul>
         <div class="vl"></div>
@@ -65,15 +62,15 @@
                 <div class="hl"></div>
                 <ul class="scrolled-navbar-buttons">
                     <li class="scrolled-button home-button">
-                        <a class="button-container home-button-container" href="#home">
+                        <a class="button-container home-button-container" href="#about">
                             <img src="imgs/arrowright.png">
-                            <p>home</p>
+                            <p>about</p>
                         </a>
                     </li>
                     <li class="scrolled-button about-button">
-                        <a class="button-container about-button-container" href="#about">
+                        <a class="button-container about-button-container" href="#portfolio">
                             <img src="imgs/arrowright.png">
-                            <p>about</p>
+                            <p>portfolio</p>
                         </a>
                     </li>
                     <li class="scrolled-button contact-button">
@@ -120,15 +117,15 @@
             <div class="hl"></div>
             <ul class="scrolled-navbar-buttons">
                 <li class="scrolled-button home-button">
-                    <a class="button-container home-button-container" href="#home">
+                    <a class="button-container home-button-container" href="#about">
                         <img src="imgs/arrowright.png">
-                        <p>home</p>
+                        <p>about</p>
                     </a>
                 </li>
                 <li class="scrolled-button about-button">
-                    <a class="button-container about-button-container" href="#about">
+                    <a class="button-container about-button-container" href="#portfolio">
                         <img src="imgs/arrowright.png">
-                        <p>about</p>
+                        <p>portfolio</p>
                     </a>
                 </li>
                 <li class="scrolled-button contact-button">
@@ -173,40 +170,70 @@
     <div class="landing-page">
         <div class="landing-page-img-wrapper">
             <img class="landing-page-img" src="imgs/cal.jpeg">
+
         </div>
+        <p class="landing-page-footer">
+            picture taken in calgary, alberta. by me
+        </p>
         <div class="landing-page-text">
             <h1 class="landing-page-title">
-                hi, i'm rin. (hi ayumi !!!)
+                hi, i'm rin.
             </h1>
             <p class="landing-page-subtitle-1">
-                i'm a developer.
+                i'm a third year computer science student at the university of british columbia
             </p>
             <p class="landing-page-subtitle-2">
-                welcome to my page.
+                welcome to my page &#9829;
             </p>
 
         </div>
     </div>
 
+    <h1 class="section-title about-title">
+        Here's all you need to know about me.
+    </h1>
 
-    <div class="home" id="home">
-        <h1>
-            home. hi
-        </h1>
+    <div class="section about" id="about">
     </div>
 
-    <div class="about" id="about">
-        <h1>
-            about.
-        </h1>
-    </div>
+    <h1 class="section-title portfolio-title" id="portfolio">
+        This is what I've been working on.
+    </h1>
+    <div class="section portfolio">
 
-    <div class="contact" id="contact">
-        <h1>
-            contact.
+
+        <div class="portfolio-container">
+            <div class="portfolio-content portfolio-content-1">
+                <div class="portfolio-img portfolio-img-1">
+                    <img src="imgs/cropped-1.png">
+                </div>
+                <div class="portfolio-description portfolio-description-1">
+                    <h1>Video Editing.</h1>
+                    <p>with Adobe After Effects.
+                    </p>
+                    <div class="portfolio-buttons portfolio-buttons-1">
+                        <a class="portfolio-btn" href="" target="_blank">
+                            <button>see more &#8594;</button>
+                        </a>
+                        <a class="portfolio-btn" href="" target="_blank">
+                            <button>learn more &#8594;</button>
+                        </a>
+                        <a class="portfolio-btn" href="" target="_blank">
+                            <button>be more &#8594;</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <h1 class="section-title contact-title">
+            Contact me.
         </h1>
-    </div>
-    <script src="js/index.js"></script>
+        <div class="section contact" id="contact">
+
+        </div>
+        <script src="js/index.js"></script>
 </body>
 
 </html>

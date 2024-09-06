@@ -16,7 +16,7 @@
     --navbar-title-color: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     --navbar-panel-color: linear-gradient(-90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.25) 100%);
     --navbar-panel-box-shadow: 0px 0px 200px 1200px rgba(0, 0, 0, 0.25);
-  }
+}
 
 html {
     scroll-behavior: smooth;
@@ -26,15 +26,15 @@ body {
     font-family: var(--font-hindi);
     background-color: var(--color-body);
     color: var(--color-text);
-    font-size: 18px;
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 /* navbar */
 .navbar {
     display: flex;
-    position: fixed; 
+    position: fixed;
     justify-content: space-between;
     background: var(--navbar-title-color);
     width: 100%;
@@ -43,7 +43,7 @@ body {
     transition: all 0.5s ease;
     z-index: 3;
     opacity: 0;
-    animation : fadeIn 2s ease forwards;
+    animation: fadeIn 2s ease forwards;
 }
 
 .navbar-logo {
@@ -216,7 +216,7 @@ body {
     margin: 0px;
     padding: 25px;
     background: var(--navbar-panel-color);
-    box-shadow:  var(--navbar-panel-box-shadow);
+    box-shadow: var(--navbar-panel-box-shadow);
     z-index: 2;
 }
 
@@ -245,7 +245,7 @@ body {
     margin: 0px;
     padding: 25px;
     background: var(--navbar-panel-color);
-    box-shadow:  var(--navbar-panel-box-shadow);
+    box-shadow: var(--navbar-panel-box-shadow);
     z-index: 2;
 }
 
@@ -346,7 +346,7 @@ body {
         justify-content: space-between;
     }
 
-    .navbar-logo{
+    .navbar-logo {
         padding: 0px 90px;
     }
 
@@ -373,15 +373,16 @@ body {
     .navbar-quicklinks {
         display: none;
     }
-    
+
     .icons img {
         max-width: 50px;
         max-height: 50px;
     }
-    .hl{
-      margin: 25px 0px;
-      margin-left: auto;
-      width: 100px;
+
+    .hl {
+        margin: 25px 0px;
+        margin-left: auto;
+        width: 100px;
     }
 
     .navbar-logo {
@@ -392,11 +393,12 @@ body {
         padding: 0px 25px;
     }
 
-    .navbar-upButton{
-      right: 20px;
+    .navbar-upButton {
+        right: 20px;
     }
-    .scrolled-navbar{
-      right: 25px;
+
+    .scrolled-navbar {
+        right: 25px;
     }
 
     .navbar-logo img {
