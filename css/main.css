@@ -1,6 +1,7 @@
 :root {
-    --font-body: "Hind Siliguri", sans-serif;
-    --font-nav: "Bebas Neue", sans-serif;
+    --font-body: "SF UI Display", sans-serif;
+    --font-hindi: "Hind Siliguri", sans-serif;
+    --font-mono: "Roboto Mono", monospace;
     --color-body: rgb(43, 45, 66);
     --color-text: white;
     --color1: rgb(141, 153, 174);
@@ -20,6 +21,7 @@ html {
 
 body {
     font-family: var(--font-body);
+    fallback: var(--font-hindi);
     background-color: var(--color-body);
     color: var(--color-text);
     font-size: 18px;
