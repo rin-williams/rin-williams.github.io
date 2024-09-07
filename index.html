@@ -183,20 +183,24 @@
                 hi, i'm rin.
             </h1>
             <p class="landing-page-subtitle-1">
-                i'm a third year computer science student at the university of british columbia
+                i'm a third year cs + ds student at
+                <br>
+                the university of british columbia
             </p>
             <p class="landing-page-subtitle-2">
-                welcome to my page &#9829;
+                welcome to my website &#9829;
             </p>
-
+            <a class="landing-page-button" href="#about">
+                <button>about me &#8595;</button>
+            </a>
         </div>
     </div>
 
-    <h1 class="section-title about-title">
+    <h1 class="section-title about-title" id="about">
         Here's all you need to know about me.
     </h1>
 
-    <div class="section about" id="about">
+    <div class="section about">
     </div>
 
     <h1 class="section-title portfolio-title" id="portfolio">
@@ -209,8 +213,8 @@
                     <img src="imgs/cropped-1.png">
                 </div>
                 <div class="portfolio-description portfolio-description-1">
-                    <h1>Coding</h1>
-                    <p>Java, Python, HTML, CSS and more.</p>
+                    <h1 id="portfolio-coding-title"></h1>
+                    <p id="portfolio-coding-text"></p>
                     </p>
                     <div class="portfolio-buttons portfolio-buttons-1">
                         <a class="portfolio-btn" href="#coding">
@@ -222,7 +226,7 @@
 
             <div class="coding-container" id="coding">
                 <div class="coding-project project-1">
-                    <h1 class="coding-project-title project-title-1">1 // Automation.</h1>
+                    <h1 class="coding-project-title" id="project-title-1"></h1>
                     <div class="coding-project-description">
 
                         <p class="coding-project-text">
@@ -243,11 +247,15 @@
                                 <img class="coding-icon" src="imgs/seleniumlogo.png">
                                 <p>Selenium</p>
                             </a>
+                            <a class="language">
+                                <img class="coding-icon" src="imgs/markdownlogo.png">
+                                <p>Markdown</p>
+                            </a>
 
                             <a class="language">
                                 <img class="coding-icon" src="imgs/gitlogo.png">
                                 <img class="coding-icon" src="imgs/githublogo.png">
-                                <p>Git</p>
+                                <p>Git & GitHub</p>
                             </a>
                         </div>
                         <p class="learnmore-title">Learn more</p>
@@ -259,24 +267,97 @@
                         </div>
                     </div>
                 </div>
+                <div class="coding-project project-2">
+                    <!-- Web development -->
+                    <h1 class="coding-project-title" id="project-title-2"></h1>
+                    <div class="coding-project-description">
+
+                        <p class="coding-project-text">
+                            I have experiences in creating lots of websites and I plan to make more for UBCO clubs,
+                            where they
+                            can best represent themselves.
+                        </p>
+
+                        <p class="language-title">Language & libraries used</p>
+                        <div class="coding-languages">
+                            <a class="language">
+                                <img class="coding-icon" src="imgs/html5logo.png">
+                                <p>HTML</p>
+                            </a>
+                            <a class="language">
+                                <img class="coding-icon" src="imgs/css3logo.png">
+                                <p>CSS</p>
+                            </a>
+                            <a class="language">
+                                <img class="coding-icon" src="imgs/jslogo.png">
+                                <p>JavaScript</p>
+                            </a>
+
+                            <a class="language">
+                                <img class="coding-icon" src="imgs/gitlogo.png">
+                                <img class="coding-icon" src="imgs/githublogo.png">
+                                <p>Git & GitHub</p>
+                            </a>
+                        </div>
+                        <p class="learnmore-title">Learn more</p>
+                        <div class="coding-learnmore">
+                            <a class="language" href="https://kdtsuo.github.io" target="_blank">
+                                <img class="coding-icon" src="imgs/kdtlogotransparent.png">
+                                <p>See KDT's website &#8594;</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="coding-project project-3">
+                    <h1 class="coding-project-title" id="project-title-3"></h1>
+                    <div class="coding-project-description">
+
+                        <p class="coding-project-text">
+                            I have been working on a project that uses machine learning to predict the price of a house
+                            based on
+                            the features of the house. This project uses the scikit-learn library and the dataset is
+                            from
+                            Kaggle.
+                        </p>
+
+                        <p class="language-title">Language & libraries used</p>
+                        <div class="coding-languages">
+                            <a class="language">
+                                <img class="coding-icon" src="imgs/rlogo.png">
+                                <img class="coding-icon" src="imgs/rstudiologo.png">
+                                <p>R & RStudio</p>
+                            </a>
+                            <a class="language">
+                                <img class="coding-icon" src="imgs/latexlogo.png">
+                                <p>Latex</p>
+                            </a>
+                        </div>
+                        <p class="learnmore-title">Learn more</p>
+                        <div class="coding-learnmore">
+                            <a class="language" href="https://github.com/rinmeng?tab=repositories" target="_blank">
+                                <img class="coding-icon" src="imgs/githublogo.png">
+                                <p>On GitHub &#8594;</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- machine learning -->
+
 
 
             </div>
-
         </div>
 
+        <h1 class=" section-title contact-title">
+            Contact me.
+        </h1>
+        <div class="section contact" id="contact">
 
-
-    </div>
-    </div>
-
-    <h1 class=" section-title contact-title">
-        Contact me.
-    </h1>
-    <div class="section contact" id="contact">
-
-    </div>
-    <script src="js/index.js"></script>
+        </div>
+        <script src="js/index.js"></script>
+        <script src="js/portfolio.js"></script>
 </body>
 
 </html>

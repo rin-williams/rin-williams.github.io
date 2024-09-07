@@ -59,14 +59,14 @@
 
 .portfolio-btn {
     display: block;
-    margin: 10px;
+    margin: 20px 0px;
     padding: 15px 25px;
     border-radius: 50px;
     text-decoration: none;
     cursor: pointer;
     color: white;
     background-color: none;
-    border: 3px solid white;
+    border: 2px solid white;
     transition: all 0.25s ease;
 }
 
@@ -74,7 +74,7 @@
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 1.5em;
+    font-size: var(--ts2);
     cursor: pointer;
 }
 
@@ -95,10 +95,18 @@
 .coding-project {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 60%vh;
 
-    margin: 50px 0px;
+    width: 95%;
+    height: 60%;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 25px 10px;
+    transition: all 0.25s ease;
+}
+
+.coding-project:hover {
+    background-color: rgb(255, 255, 255, 0.05);
+
 }
 
 
@@ -106,13 +114,31 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .coding-project-title {
     margin: 25px;
     font-size: var(--ts5);
+}
+
+#portfolio-coding-text {
+    overflow: hidden;
+    text-align: center;
+}
+
+#project-title-1 {
+    text-align: left;
+}
+
+#project-title-2 {
+    text-align: right;
+}
+
+#project-title-3 {
+    text-align: left;
 }
 
 
@@ -130,6 +156,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0px 0px 15px 0px;
 }
 
 .coding-languages {
@@ -147,6 +174,8 @@
     margin: 15px;
     cursor: pointer;
     transition: all 0.25s ease;
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -201,11 +230,42 @@
 
     .portfolio-btn button {
         font-size: var(--phone-ts);
-        padding: 0px 10px;
     }
 
-    .portfolio-btn {
-        margin: 5px;
-        padding: 5px;
+    .coding-project {
+        margin: var(--phone-margin) 0px;
+    }
+
+
+    .coding-project-title {
+        font-size: var(--phone-ts2);
+        margin: var(--phone-margin);
+    }
+
+    .coding-project-text {
+        font-size: var(--phone-ts);
+        margin: var(--phone-margin);
+
+    }
+
+    .language-title {
+        font-size: var(--phone-ts);
+    }
+
+    .learnmore-title {
+        font-size: var(--phone-ts);
+    }
+
+    .coding-languages {
+        flex-wrap: wrap;
+    }
+
+    .language {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .language p {
+        font-size: var(--phone-ts);
     }
 }

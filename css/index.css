@@ -45,6 +45,7 @@
 .landing-page-subtitle-1 {
   opacity: 0;
   margin: 0px;
+  max-width: 100%;
   animation: swipeToLeft 1s ease forwards, fadeIn 1s ease forwards;
   animation-delay: 1.5s;
 }
@@ -55,6 +56,40 @@
   animation: swipeToLeft 1s ease forwards, fadeIn 1s ease forwards;
   animation-delay: 2s;
 }
+
+.landing-page-button {
+  display: flex;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards, swipeToLeft 1s ease forwards;
+  animation-delay: 2.5s;
+}
+
+.landing-page-button {
+  color: var(--color-text);
+  text-decoration: none;
+  opacity: 0;
+  transition: all 0.25s ease;
+  justify-content: center;
+}
+
+
+.landing-page-button button {
+  background-color: transparent;
+  text-decoration: none;
+  border: 3px solid var(--color-text);
+  color: var(--color-text);
+  border-radius: 50px;
+  padding: 10px 25px;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.landing-page-button button:hover {
+  background-color: var(--color-text);
+  color: black;
+}
+
 
 .landing-page-footer {
   display: block;

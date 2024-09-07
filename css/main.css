@@ -13,7 +13,10 @@
     --ts4: 2.5em;
     --ts5: 3em;
 
+    --phone-margin: 15px;
+
     --phone-ts: 12px;
+    --phone-ts2: 22px;
     --phone-titlets: 2em;
     --navbar-title-color: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     --navbar-panel-color: linear-gradient(-90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.25) 100%);
